@@ -70,3 +70,7 @@ print(list(range(0, 15, 2)))  # [0, 2, 4, 6, 8, 10, 12, 14]
 lista[3] = "Mikołaj"
 print(lista)  # ['Radek', 'Tomek', 'Zenek', 'Mikołaj', 'Ewa', 'Ela', 'Iza', 'Mariusz', 'Przemek']
 
+# insert() - wstawienie lementu na wskazanym indeksie
+lista.insert(1, "Karol")
+print(lista)
+# ['Radek', 'Karol', 'Tomek', 'Zenek', 'Mikołaj', 'Ewa', 'Ela', 'Iza', 'Mariusz', 'Przemek']

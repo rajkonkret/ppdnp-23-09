@@ -64,3 +64,9 @@ print(lista_15[0::2])  # [start:stop:step]
 # [0, 2, 4, 6, 8, 10, 12, 14]
 # [0, 2, 4, 6, 8, 10, 12, 14]
 print(list(range(0, 15, 2)))  # [0, 2, 4, 6, 8, 10, 12, 14]
+
+# nadpisanie elementu w liście
+# zmieniana jest bazowa lista
+lista[3] = "Mikołaj"
+print(lista)  # ['Radek', 'Tomek', 'Zenek', 'Mikołaj', 'Ewa', 'Ela', 'Iza', 'Mariusz', 'Przemek']
+

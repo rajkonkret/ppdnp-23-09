@@ -17,3 +17,4 @@ if __name__ == '__main__':
 # dwa razy shift opcje wyszukiwania
 # ctrl shift f10 - uruchamianie
 # Hi, PyCharm
+# ctrl alt l - formatowanie programu do zasad PEP8

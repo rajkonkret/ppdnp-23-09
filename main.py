@@ -18,3 +18,4 @@ if __name__ == '__main__':
 # ctrl shift f10 - uruchamianie
 # Hi, PyCharm
 # ctrl alt l - formatowanie programu do zasad PEP8
+# theme - zmiana skórki

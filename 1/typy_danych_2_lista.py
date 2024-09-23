@@ -74,3 +74,9 @@ print(lista)  # ['Radek', 'Tomek', 'Zenek', 'Mikołaj', 'Ewa', 'Ela', 'Iza', 'Ma
 lista.insert(1, "Karol")
 print(lista)
 # ['Radek', 'Karol', 'Tomek', 'Zenek', 'Mikołaj', 'Ewa', 'Ela', 'Iza', 'Mariusz', 'Przemek']
+
+# sprawdzenie indeksu elementu
+print(lista.index("Mikołaj"))  # indeks numer 4
+lista.append("Mikołaj")
+print(lista)  # ['Radek', 'Karol', 'Tomek', 'Zenek', 'Mikołaj', 'Ewa', 'Ela', 'Iza', 'Mariusz', 'Przemek', 'Mikołaj']
+print(lista.index("Mikołaj"))  # 4 - podaje pierwsze wystąpienie

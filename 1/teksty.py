@@ -53,3 +53,16 @@ print(tekst_format1)
 # \t - tabulator
 # \n - nowa linia
 # \b - backspace
+
+starszy = "Witaj %s!"  # %s - string
+print(starszy % imie)  # Witaj Radek!
+
+print("Witaj {}!".format(imie))  # Witaj Radek!
+
+print("Witaj", imie)  # Witaj Radek
+
+# tekst wielolinijkowy
+print("""Tekst
+    wielolinijkowy""")
+#  "Tekst
+#     wielolinijkowy"

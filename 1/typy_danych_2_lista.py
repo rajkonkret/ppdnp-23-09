@@ -80,3 +80,13 @@ print(lista.index("Mikołaj"))  # indeks numer 4
 lista.append("Mikołaj")
 print(lista)  # ['Radek', 'Karol', 'Tomek', 'Zenek', 'Mikołaj', 'Ewa', 'Ela', 'Iza', 'Mariusz', 'Przemek', 'Mikołaj']
 print(lista.index("Mikołaj"))  # 4 - podaje pierwsze wystąpienie
+
+# usunięcie po elemencie, pierwszy z listy
+lista.remove("Mikołaj")
+print(lista)  # ['Radek', 'Karol', 'Tomek', 'Zenek', 'Ewa', 'Ela', 'Iza', 'Mariusz', 'Przemek', 'Mikołaj']
+
+# usunięcie po indeksie, zwraca usunięty element
+print(lista.pop(5))  # Ela
+print(lista)  # ['Radek', 'Karol', 'Tomek', 'Zenek', 'Ewa', 'Iza', 'Mariusz', 'Przemek', 'Mikołaj']
+print(lista.pop(-2))  # Przemek
+print(lista.pop())  # Mikołaj, usunie ostatni elemnt z listy

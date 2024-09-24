@@ -56,3 +56,21 @@ print(dict_small)  # {'x': 2, 'y': 3, 'z': 5}
 a = input("Podaj pierwszą liczbę")
 b = int(input("Podaj drugą liczbę"))
 print(float(a) + b)  # 11.0
+
+# napisac aplikację słownik pol-ang z wykoryzstaniem słownika
+# słownik
+# wypisac klucze
+# pobrac słowko, które chce przetłumaczyc
+# wypisać tłumaczenie
+pol_ang = {'kot': 'cat', 'pies': 'dog', 'dach': 'roof'}
+print("Znam takie słówka", pol_ang.keys())
+odp = input("Podaj słówko do przetłumaczenia")
+# print(pol_ang[odp.lower().strip()])
+print(pol_ang.get(odp, "nie mo"))
+# print(f"Tłumaczone słowo {pol_ang[odp.lower().strip()]}")
+print(f"Tłumaczenie dla słowa: {odp} - {pol_ang.get(odp, "nie mo")}")
+# Znam takie słówka dict_keys(['kot', 'pies', 'dach'])
+# Podaj słówko do przetłumaczenia>? kot
+# cat
+# Tłumaczone słowo cat
+# Tłumaczenie dla słowa: kot - cat

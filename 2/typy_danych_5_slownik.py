@@ -46,6 +46,13 @@ dict_small.update([('y', 3), ('z', 5)])
 print(dict_small)  # {'x': 2, 'y': 3, 'z': 5}
 
 # input() - pobieranie danych od użytkownika
-tekst = input("Podaj imię")
-print(tekst)
-print(type(tekst))# <class 'str'>
+# tekst = input("Podaj imię")  # zwraca strmi
+# print(tekst)
+# print(type(tekst))  # <class 'str'>
+
+# napisac aplikacje kalkulator
+# pobrac dwie liczby
+# wyswietlic wynik (+)
+a = input("Podaj pierwszą liczbę")
+b = int(input("Podaj drugą liczbę"))
+print(float(a) + b)  # 11.0

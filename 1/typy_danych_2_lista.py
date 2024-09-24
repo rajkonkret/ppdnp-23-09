@@ -1,6 +1,7 @@
 # kolekcje - wiele danych w jednym pudełku
 # lista - przwechowuje wiele danych, różnego typu raz
 # zachowuje kolejnosc przy dodawaniu elementów
+from time import perf_counter
 
 # pusta lista
 lista = []
@@ -89,4 +90,76 @@ print(lista)  # ['Radek', 'Karol', 'Tomek', 'Zenek', 'Ewa', 'Ela', 'Iza', 'Mariu
 print(lista.pop(5))  # Ela
 print(lista)  # ['Radek', 'Karol', 'Tomek', 'Zenek', 'Ewa', 'Iza', 'Mariusz', 'Przemek', 'Mikołaj']
 print(lista.pop(-2))  # Przemek
-print(lista.pop())  # Mikołaj, usunie ostatni elemnt z listy
+print(lista.pop())  # Mikołaj, usunie ostatni element z listy
+
+a = 1
+b = 3
+a = b
+print(a, b)  # 3 3
+b = 7
+print(a, b)  # 3 7
+#   a   =   b
+lista_2 = lista  # a = b, kopiowany jest adres listy, referencja
+print(lista_2)
+print(lista)
+lista_copy = lista.copy()  # kopia elementów listy
+# ['Radek', 'Karol', 'Tomek', 'Zenek', 'Ewa', 'Iza', 'Mariusz']
+# ['Radek', 'Karol', 'Tomek', 'Zenek', 'Ewa', 'Iza', 'Mariusz']
+lista.clear()  # usnięcie wszystkich elementów listy, b = 7
+# print(a, b)
+print(lista_2)  # []
+print(lista)  # []
+print(lista_copy)  # ['Radek', 'Karol', 'Tomek', 'Zenek', 'Ewa', 'Iza', 'Mariusz']
+# []
+# []
+print(id(lista_2))  # 2589967389056
+print(id(lista))  # 2589967389056
+print(id(lista_copy))  # 2113999798080
+
+liczby = [54, 999, 34, 22, 12.34, 687]
+print(liczby)
+print(type(liczby))  # <class 'list'>
+
+liczby.sort()
+print(liczby)  # [12.34, 22, 34, 54, 687, 999]
+
+liczby = [54, 999, 34, 22, 12.34, 687, "A"]
+print(liczby)  # liczby = [54, 999, 34, 22, 12.34, 687]
+print(liczby)
+# liczby.sort()  # TypeError: '<' not supported between instances of 'str' and 'int'
+# kod ascii
+print(ord("A"))  # kod 65
+print(ord("1"))  # kod 49
+
+lista_osob = ['radek', 'ola', 'lena', 'agata']
+lista_osob.sort()
+print(lista_osob)  # ['agata', 'lena', 'ola', 'radek']
+
+lista_osob.sort(reverse=True)  # sortuje i odwraca
+print(lista_osob)  # ['radek', 'ola', 'lena', 'agata']
+
+lista_osob.reverse()  # tylko odwraca, zmienia listę
+print(lista_osob)  # ['agata', 'lena', 'ola', 'radek']
+
+print(lista_osob[::-1])  # ['radek', 'ola', 'lena', 'agata'], odwraca wypisanie, nie zmienia listy
+print(lista_osob)  # ['agata', 'lena', 'ola', 'radek']
+
+liczby[3] = 666
+print(liczby[0:3])
+print(liczby[-2])
+print(liczby)  # [54, 999, 34, 666, 12.34, 687, 'A']
+
+del liczby  # usunięcie listy z pamięci
+# print(liczby)  # NameError: name 'liczby' is not defined
+
+# rozpakowanie sekwencji
+tekst = "Pyth on."
+lista1 = list(tekst)
+print(lista1)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.']
+
+lista2 = [tekst]
+print(lista2)  # ['Pyth on.']
+
+krotka = tuple(lista_copy)  # tuple() - rzutowanie(zamiana) na krotkę, tuplę
+print(type(krotka))
+print(krotka)  # ('Radek', 'Karol', 'Tomek', 'Zenek', 'Ewa', 'Iza', 'Mariusz')

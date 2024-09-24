@@ -46,3 +46,21 @@ if (n := len(a)) > 3:
 # n:= zastepuje te dwie komendy
 # n = len(a)
 # if n > 3:
+
+# kolejnośc ma znaczenie
+podatek = 0
+zarobki = int(input("Podaj zarobki"))
+if zarobki < 10_000:
+    podatek = 0
+elif zarobki < 30_000:  # kolejny warunek
+    podatek = 0.2
+elif zarobki < 100_000:  # kolejny warunek
+    podatek = 0.4
+else:  # pozostałe przypadki
+    podatek = 0.9
+
+print(f"Podatek wynosi {podatek * zarobki}")
+# dodac podatek 0.2 dla dochodów od 10000 do 29999
+# Podaj zarobki29999
+# Podatek wynosi 5999.8
+

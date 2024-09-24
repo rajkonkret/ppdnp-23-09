@@ -48,19 +48,55 @@ if (n := len(a)) > 3:
 # if n > 3:
 
 # kolejnośc ma znaczenie
-podatek = 0
-zarobki = int(input("Podaj zarobki"))
-if zarobki < 10_000:
-    podatek = 0
-elif zarobki < 30_000:  # kolejny warunek
-    podatek = 0.2
-elif zarobki < 100_000:  # kolejny warunek
-    podatek = 0.4
-else:  # pozostałe przypadki
-    podatek = 0.9
-
-print(f"Podatek wynosi {podatek * zarobki}")
+# podatek = 0
+# zarobki = int(input("Podaj zarobki"))
+# if zarobki < 10_000:
+#     podatek = 0
+# elif zarobki < 30_000:  # kolejny warunek
+#     podatek = 0.2
+# elif zarobki < 100_000:  # kolejny warunek
+#     podatek = 0.4
+# else:  # pozostałe przypadki
+#     podatek = 0.9
+#
+# print(f"Podatek wynosi {podatek * zarobki}")
 # dodac podatek 0.2 dla dochodów od 10000 do 29999
 # Podaj zarobki29999
 # Podatek wynosi 5999.8
 
+suma_zam = 150
+if suma_zam > 100:
+    rabacik = 25
+else:
+    rabacik = 0
+
+print(f"Rabat wynosi {rabacik}")  # Rabat wynosi 25
+rabat = 25 if suma_zam > 100 else 0  # jak warunek spełniony to co po prawej trafia do zmiennej rabat
+print(f"Rabat wynosi {rabat}")  # Rabat wynosi 25
+
+# zasymulujemy system zbierania logów
+# zmienne będą przechować dane z jakiego systemu przyszły logi
+# email, console, inny (else)
+# dla console: "Stało się coś strasznego"
+# dla email: "System email"
+# w zmiennej error bedzie poziom błedu
+# error, medium, inny
+# gdy system email dopisz do listy błedów opis poziomu błedu jaki przyszedł do nas
+alert_system = 'email'
+error = 'error'
+lista_b = []
+
+if alert_system == 'console':
+    print("Stało się coś strasznego")
+elif alert_system == 'email':
+    print("System email")
+    if error == 'error':
+        lista_b.append("Krytyczny")
+    elif error == "medium":
+        lista_b.append("Ostrzeżenie")
+    else:
+        lista_b.append("inny")
+else:
+    print("Inny system")
+
+print(lista_b)  # ['Krytyczny']

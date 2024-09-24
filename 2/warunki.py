@@ -100,3 +100,40 @@ else:
     print("Inny system")
 
 print(lista_b)  # ['Krytyczny']
+
+a = 10
+assert a > 5
+# assert a > 15 # AssertionError
+assert 'Krytyczny' in lista_b
+# assert 'Ostrzeżenie' in lista_b # AssertionError
+
+# napisać test z...
+# zadać pytanie
+# pobrac odpowiedź
+# sprawdzic odpowiedź
+# wypisać wynik
+punkty = 0
+odp = input("Podaj rok Chrztu Polski")
+if odp == '966':
+    print("Brawo")
+    punkty += 1  # punkty = punkty + 1
+else:
+    print("Bład")
+print(punkty)
+odp = input("Podaj rok Bitwy pod Grunwaldem")
+if odp == '1410':
+    print("Brawo")
+    punkty += 1  # punkty = punkty + 1
+else:
+    print("Bład")
+print(punkty)
+# spam += 1    spam = spam + 1
+# spam -= 1    spam = spam - 1
+# spam *= 1    spam = spam * 1
+# spam /= 1    spam = spam / 1
+# spam %= 1    spam = spam % 1
+a = 1
+a *= 2  # a = a * 2
+print(a)  # 2
+a += 3  # a= a + 3
+print(a)  # 5

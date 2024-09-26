@@ -39,6 +39,7 @@ with open('test.log', "a", encoding='utf-8') as f:
     f.write("Dopisane\n")
     f.write("Dodane\n")
     f.write("Dośdane\n")
+    f.write("Dośćąźdane\n")
 
 with open('test.log', "r", encoding='utf-8') as file:
     lines = file.read()  # odczyt danych z pliku

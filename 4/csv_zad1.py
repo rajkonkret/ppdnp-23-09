@@ -39,3 +39,4 @@ with open(filename, "w", newline="") as f:
     csvwriter.writerows(products)  # writerows
 
 # newline="" - ominięcie problemu podwójnych enterów
+# delimiter=";" - znak podziału

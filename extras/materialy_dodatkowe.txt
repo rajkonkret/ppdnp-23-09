@@ -122,3 +122,7 @@ hackerrank
 https://pl.altapps.net/soft/hackerrank-com
 
 pip freeze > requirements.txt
+pip install -r .\requirements.txt
+
+pip install pyinstaller
+pyinstaller.exe --onefile --noconsole .\okno1.py

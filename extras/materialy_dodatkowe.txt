@@ -120,3 +120,5 @@ spam %= 1    spam = spam % 1
 w3schools
 hackerrank
 https://pl.altapps.net/soft/hackerrank-com
+
+pip freeze > requirements.txt
